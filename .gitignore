@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+server/uploads/*
+!server/uploads/.gitkeep
+storage/*
+!storage/.gitkeep
+.local-postgres-data/
+npm-debug.log*
+
+.vercel

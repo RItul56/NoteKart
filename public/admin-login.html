@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="./favicon.ico">
+  <meta name="theme-color" content="#112b4e">
+  <title>NoteKart · Admin sign in</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script defer src="js/admin-login.js"></script>
+</head>
+<body class="admin-page">
+  <header class="nav"><a class="brand" href="/"><span class="brand-mark">N</span>NoteKart <span class="desk-label">Admin sign in</span></a><a class="login-link" href="/">Student site</a></header>
+  <main class="admin-login-card">
+    <div class="eyebrow">STAFF ACCESS</div>
+    <h1>Admin sign in</h1>
+    <p>Use an administrator account to open the private NoteKart order desk.</p>
+    <div id="admin-login-notice" class="admin-notice" role="status"></div>
+    <form id="admin-login-form">
+      <label>Email<input type="email" name="email" autocomplete="username" required></label>
+      <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+      <button class="button full" type="submit">Sign in to order desk <span>↗</span></button>
+    </form>
+    <p class="admin-register-link">New admin? <a href="/admin/register">Register admin account</a></p>
+    <a class="text-button" href="/">Back to NoteKart</a>
+  </main>
+</body>
+</html>

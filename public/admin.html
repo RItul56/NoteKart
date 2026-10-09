@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./favicon.ico">
+    <title>NoteKart · Order desk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script defer src="js/admin.js"></script>
+</head>
+
+<body class="admin-page">
+    <header class="nav"><a class="brand" id="admin-home-link" href="/dashboard/admin"><span class="brand-mark">N</span>NoteKart <span
+                class="desk-label">Order desk</span></a>
+        <div class="admin-top-actions"><a href="/" class="login-link" id="student-site-link">Student site</a><button class="login-link" id="admin-logout">Sign out</button></div>
+    </header>
+    <main class="admin-shell">
+        <div class="admin-heading">
+            <div>
+                <div class="eyebrow">OPERATIONS</div>
+                <h1>Order desk</h1>
+                <p>Review submissions, quote prices, and move work through delivery.</p>
+            </div><button id="refresh" class="button">Refresh</button>
+        </div>
+        <div id="notice" class="admin-notice" role="status"></div>
+        <section class="admin-toolbar"><label>Filter by status<select id="status-filter">
+                    <option value="">All orders</option>
+                    <option>pending</option>
+                    <option>reviewing</option>
+                    <option>quoted</option>
+                    <option>confirmed</option>
+                    <option>in_progress</option>
+                    <option>ready</option>
+                    <option>delivered</option>
+                    <option>completed</option>
+                    <option>cancelled</option>
+                </select></label><span id="order-count"></span></section>
+        <section id="orders" class="admin-orders">
+            <p>Loading orders…</p>
+        </section>
+    </main>
+</body>
+
+</html>

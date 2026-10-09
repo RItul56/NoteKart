@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#112b4e">
+  <title>NoteKart · Admin registration</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script defer src="js/admin-register.js"></script>
+</head>
+<body class="admin-page">
+  <header class="nav"><a class="brand" href="/"><span class="brand-mark">N</span>NoteKart <span class="desk-label">Admin setup</span></a><a class="login-link" href="/admin/login">Admin sign in</a></header>
+  <main class="admin-login-card admin-register-card">
+    <div class="eyebrow">PRIVATE STAFF ACCESS</div>
+    <h1>Register an admin</h1>
+    <p>Admin accounts can view student requests and submitted files. Registration requires the private setup key configured by the site owner.</p>
+    <div id="admin-register-notice" class="admin-notice" role="status" aria-live="polite"></div>
+    <form id="admin-register-form">
+      <label>Full name<input name="fullName" autocomplete="name" maxlength="120" required></label>
+      <label>Email<input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+      <label>Phone number<input type="tel" name="contactNumber" autocomplete="tel" maxlength="30" required></label>
+      <label>Password<input type="password" name="password" autocomplete="new-password" minlength="10" maxlength="128" required></label>
+      <label>Confirm password<input type="password" name="confirmPassword" autocomplete="new-password" minlength="10" maxlength="128" required></label>
+      <label>Admin setup key<input type="password" name="registrationKey" autocomplete="off" minlength="32" required></label>
+      <button class="button full" type="submit">Create admin account <span>↗</span></button>
+    </form>
+    <p class="admin-register-link">Already registered? <a href="/admin/login">Sign in</a></p>
+    <a class="text-button" href="/">Back to NoteKart</a>
+  </main>
+</body>
+</html>
